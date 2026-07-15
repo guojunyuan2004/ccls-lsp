@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "ccls-lsp",
+  "description": "C/C++/Objective-C/Objective-C++ language server (ccls) for Claude Code, providing code intelligence, diagnostics, and cross-references.",
+  "version": "1.0.0",
+  "author": {
+    "name": "guojunyuan2004",
+    "url": "https://github.com/guojunyuan2004"
+  },
+  "homepage": "https://github.com/guojunyuan2004/ccls-lsp",
+  "repository": "https://github.com/guojunyuan2004/ccls-lsp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "c",
+    "cpp",
+    "language-server",
+    "ccls",
+    "lsp",
+    "clangd-alternative"
+  ],
+  "lspServers": {
+    "ccls": {
+      "command": "ccls",
+      "args": [],
+      "extensionToLanguage": {
+        ".c": "c",
+        ".h": "c",
+        ".cpp": "cpp",
+        ".cc": "cpp",
+        ".cxx": "cpp",
+        ".hpp": "cpp",
+        ".hxx": "cpp",
+        ".C": "cpp",
+        ".H": "cpp",
+        ".m": "objective-c",
+        ".mm": "objective-cpp"
+      }
+    }
+  }
+}
